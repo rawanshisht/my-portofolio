@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Hero from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -11,12 +10,11 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <Hero />
       <About />
       <Skills />
       <Projects />
       <Resume />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }

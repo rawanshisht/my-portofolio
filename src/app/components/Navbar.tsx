@@ -62,7 +62,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 flex justify-center md:justify-start">
+                <div className="flex-1 flex justify-center md:justify-start ml-6">
                     <a href="#" className="text-3xl font-bold text-sky-200">
                         R.
                     </a>
