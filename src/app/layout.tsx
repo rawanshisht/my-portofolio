@@ -22,10 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+    <html lang="en" className="scroll-smooth w-full h-full">
+      <body className={`${inter.className}`}>
         <Navbar />
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
