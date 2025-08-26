@@ -1,7 +1,7 @@
 export default function Skills() {
     return (
         <section id="skills" className="min-h-screen scroll-mt-20">
-            <h2 className="text-xl md:text-4xl md:text-5xl font-bold text-sky-200 uppercase text-center my-6">Skills</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-sky-200 uppercase text-center my-6">Skills</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 max-w-5xl mx-auto">
                 <div className="bg-stone-100 p-6 rounded-xl shadow-black shadow-lg hover:scale-[1.02] transition-transform">

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { House, User, FolderGit, File, Mail, Github, CodeXml, X } from 'lucide-react';
+import { House, User, FolderGit, File, Mail, CodeXml, X } from 'lucide-react';
+import { FaGithub } from "react-icons/fa";
 
 export default function Navbar() {
     const navLinks = [
@@ -76,7 +77,7 @@ export default function Navbar() {
                                     {link.icon}{link.name}</a>
                             </li>
                         ))}
-                        <li><a className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer"><Github size={24} /></a></li>
+                        <li><a className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a></li>
                     </ul>
                 </div>
             </div>
