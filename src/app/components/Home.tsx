@@ -57,7 +57,7 @@ export default function Hero() {
                 </a>
             </div>
 
-            <div className="avatar">
+            <div className="avatar -z-10">
                 <div className="w-64 md:w-96 rounded-full">
                     <Image
                         src="/developer.png"
