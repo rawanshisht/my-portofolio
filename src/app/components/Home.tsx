@@ -44,7 +44,6 @@ export default function Hero() {
                 priority
                 className="object-cover -z-10 h-screen"
             />
-            {/* Overlay (optional for darkening) text-[#A0D2DB]*/}
             <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
             <div className="flex flex-col items-center md:items-start gap-4 relative -z-10">
@@ -58,14 +57,18 @@ export default function Hero() {
                 </a>
             </div>
 
-            <Image
-                src="/developer.jpg"
-                alt="Background"
-                width={400}
-                height={400}
-                priority
-                className="object-cover rounded-lg shadow-xl md:w-[400px] md:h-[400px] px-3"
-            />
+            <div className="avatar">
+                <div className="w-96 rounded-full">
+                    <Image
+                        src="/developer.png"
+                        alt="Background"
+                        width={300}
+                        height={300}
+                        priority
+                        className="object-contain rounded-lg shadow-xl md:w-[300px] md:h-[300px] px-3"
+                    />
+                </div>
+            </div>
         </section >
     )
 }
