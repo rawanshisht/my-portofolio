@@ -55,6 +55,7 @@ export default function Navbar() {
                                         </li>
                                     ))}
                                     <li><a className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer">Github</a></li>
+                                    <li><a className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://www.linkedin.com/in/rawanshisht/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
 
                                 </ul>
                             </div>
@@ -63,7 +64,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center md:justify-start">
-                    <a href="#" className="text-3xl font-bold text-primary-color">
+                    <a href="#" className="text-5xl font-bold text-primary-color">
                         R.
                     </a>
                 </div>

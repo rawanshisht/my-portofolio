@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Contact() {
     return (
-        <section id="contact" className="min-h-screen scroll-mt-20 flex flex-col justify-center items-center gap-6 my-6">
+        <section id="contact" className="min-h-screen scroll-mt-10 flex flex-col justify-center items-center my-6">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-color uppercase text-center"> Let&apos;s Build Something Amazing</h2>
             <h3 className="text-lg md:text-xl text-center font-medium text-secondary-color leading-relaxed md:leading-loose max-w-3xl mx-auto p-2">
                 Looking for a developer who can create high-performance, interactive web experiences?
