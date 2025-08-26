@@ -22,7 +22,7 @@ export default function Navbar() {
     }, []);
     return (
         <nav className={`navbar sticky top-0 px-6 w-full text-sky-50 ${scrolled ? "bg-black/40" : "bg-transparent"}`}>
-            <div className="flex items-center justify-between w-full md:justify-start">
+            <div className="flex items-center justify-between w-full md:justify-start md:no-wrap">
                 {/* Mobile (burger menu) */}
                 <div className="md:hidden">
                     <div className="drawer">
@@ -40,9 +40,9 @@ export default function Navbar() {
                                 </svg>
                             </label>
                         </div>
-                        <div className="drawer-side">
+                        <div className="drawer-side fixed inset-0 z-[60]">
                             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                            <div className="menu bg-blue-950 text-base-content min-h-full w-80 p-4 relative">
+                            <div className="menu bg-blue-950 text-base-content min-h-full w-80 p-4 overflow-y-auto">
 
                                 <ul className="mt-4">
                                     {/* Close button */}
@@ -62,17 +62,18 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 flex justify-center md:justify-start ml-6">
+                <div className="flex-1 flex justify-center md:justify-start">
                     <a href="#" className="text-3xl font-bold text-sky-200">
                         R.
                     </a>
                 </div>
                 {/* Desktop (inline menu) */}
                 <div className="hidden md:flex ml-auto">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 flex flex-nowrap">
                         {navLinks.map((link) => (
                             <li key={link.name}>
-                                <a href={link.href} className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">{link.icon}{link.name}</a>
+                                <a href={link.href} className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
+                                    {link.icon}{link.name}</a>
                             </li>
                         ))}
                         <li><a className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer"><Github size={24} /></a></li>

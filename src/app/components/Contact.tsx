@@ -6,9 +6,9 @@ export default function Contact() {
             </h3>
             <h4>Looking for a developer who can create high-performance, interactive web experiences?</h4>
             <h4>UK</h4>
-            <button className="bg-[#A0D2DB] text-white px-4 py-2 rounded mt-4 hover:bg-[#82b8c3] transition">
+            <a href="mailto:rawan.a.elshishtawy@gmail.com?subject=Let's%20Work%20Together" className="w-40 bg-sky-200 text-sky-950 font-semibold md:font-bold px-4 py-2 rounded mt-4 hover:bg-sky-300 transition hover:cursor-pointer text-center">
                 Get in Touch
-            </button>
+            </a>
             <div>Icons</div>
         </section>
     )
