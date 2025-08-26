@@ -58,14 +58,13 @@ export default function Hero() {
             </div>
 
             <div className="avatar">
-                <div className="w-96 rounded-full">
+                <div className="w-64 md:w-96 rounded-full">
                     <Image
                         src="/developer.png"
                         alt="Background"
-                        width={300}
-                        height={300}
+                        fill
                         priority
-                        className="object-contain rounded-lg shadow-xl md:w-[300px] md:h-[300px] px-3"
+                        className="object-contain rounded-lg shadow-xl px-3"
                     />
                 </div>
             </div>
