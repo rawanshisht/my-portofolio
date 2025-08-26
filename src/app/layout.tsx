@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth w-full h-full bg-blue-950 overflow-x-hidden">
+    <html lang="en" className="scroll-smooth w-full h-full bg-dark-bg overflow-x-hidden">
       <body className={sourceCodePro.className}>
         <Navbar />
         <main>

@@ -22,14 +22,14 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
-        <nav className={`navbar sticky top-0 px-6 w-full text-sky-50 ${scrolled ? "bg-black/40" : "bg-transparent"}`}>
+        <nav className={`navbar sticky top-0 px-6 w-full ${scrolled ? "bg-black/40" : "bg-transparent"}`}>
             <div className="flex items-center justify-between w-full md:justify-start md:no-wrap">
                 {/* Mobile (burger menu) */}
                 <div className="md:hidden">
                     <div className="drawer">
                         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                         <div className="drawer-content">
-                            <label htmlFor="my-drawer" className="text-white font-bold px-4 py-2 rounded mt-4 hover:text-sky-200 cursor-pointer transition drawer-button">
+                            <label htmlFor="my-drawer" className="text-white font-bold px-4 py-2 rounded mt-4 hover:text-primary-color cursor-pointer transition drawer-button">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-6 w-6"
@@ -41,21 +41,20 @@ export default function Navbar() {
                                 </svg>
                             </label>
                         </div>
-                        <div className="drawer-side fixed inset-0 z-[60]">
+                        <div className="drawer-side fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm">
                             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                            <div className="menu bg-blue-950 text-base-content min-h-full w-80 p-4 overflow-y-auto">
-
+                            <div className="menu bg-dark-bg min-h-full w-80 p-4 overflow-y-auto">
                                 <ul className="mt-4">
                                     {/* Close button */}
                                     <label htmlFor="my-drawer" className="cursor-pointer flex justify-end">
-                                        <X size={28} className="text-sky-100 hover:text-sky-200" />
+                                        <X size={28} className="text-secondary-color hover:text-primary-color" />
                                     </label>
                                     {navLinks.map((link) => (
                                         <li key={link.name}>
-                                            <a href={link.href} className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">{link.name}</a>
+                                            <a href={link.href} className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">{link.name}</a>
                                         </li>
                                     ))}
-                                    <li><a className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer">Github</a></li>
+                                    <li><a className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer">Github</a></li>
 
                                 </ul>
                             </div>
@@ -64,7 +63,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center md:justify-start">
-                    <a href="#" className="text-3xl font-bold text-sky-200">
+                    <a href="#" className="text-3xl font-bold text-primary-color">
                         R.
                     </a>
                 </div>
@@ -73,11 +72,11 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1 flex flex-nowrap">
                         {navLinks.map((link) => (
                             <li key={link.name}>
-                                <a href={link.href} className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
+                                <a href={link.href} className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
                                     {link.icon}{link.name}</a>
                             </li>
                         ))}
-                        <li><a className="text-lg relative text-sky-100 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a></li>
+                        <li><a className="text-lg relative text-secondary-color after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full" href="https://github.com/rawanshisht" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a></li>
                     </ul>
                 </div>
             </div>

@@ -56,13 +56,12 @@ export default function Projects() {
     ]
     return (
         <section id="projects" className="min-h-screen scroll-mt-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-sky-200 uppercase text-center my-6">Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-color uppercase text-center my-6">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 max-w-5xl mx-auto">
                 {
                     projects.map((project, index) => (
-                        <div key={index} className="bg-stone-100 p-6 rounded-xl shadow-black shadow-lg hover:scale-[1.02] transition-transform hover:cursor-pointer">
+                        <div key={index} className="bg-light-bg p-6 rounded-xl shadow-black shadow-lg hover:scale-[1.02] transition-transform hover:cursor-pointer">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">
-
                                 <h4 className="text-lg font-bold text-left">{project.title} </h4>
                                 <h4 className="text-md font-medium text-left text-gray-400 italic">{project.subtitle} </h4>
                                 <p className="mt-3 text-md font-medium">

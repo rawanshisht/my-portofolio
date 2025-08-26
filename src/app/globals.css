@@ -1,7 +1,18 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
-html,
-body {
-    color: black;
+@plugin "daisyui" {
+    themes: false;
+}
+
+@theme {
+    --color-primary-color: oklch(90.1% 0.058 230.902);
+    /*sky-200*/
+    --color-secondary-color: oklch(95.1% 0.026 236.824);
+    /*sky-100*/
+    --color-accent-color: oklch(82.8% 0.111 230.318);
+    /*sky-300*/
+    --color-dark-bg: oklch(28.2% 0.091 267.935);
+    /*blue-950*/
+    --color-light-bg: oklch(97% 0.001 106.424);
+    /*stone-100*/
 }
