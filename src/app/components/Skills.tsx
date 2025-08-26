@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <section id="skills" className="min-h-screen scroll-mt-20">
+        <section id="skills" className="min-h-screen scroll-mt-20 flex flex-col justify-center items-center gap-6 my-6">
             <h2 className="text-4xl md:text-5xl font-bold text-primary-color uppercase text-center my-6">Skills</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 max-w-5xl mx-auto">

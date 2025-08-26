@@ -9,11 +9,12 @@ export default function Resume() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <div className="relative -z-10 w-[300px] h-[400px] md:w-[400px] md:h-[500px] shadow-xl rounded-lg overflow-auto">
+                <div className="shadow-xl rounded-lg overflow-auto">
                     <Image
                         src="/resume-preview.png"
                         alt="Resume preview"
-                        fill
+                        width={400}
+                        height={400}
                         className="object-contain"
                     />
                 </div>

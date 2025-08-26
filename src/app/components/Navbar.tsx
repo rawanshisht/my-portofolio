@@ -41,7 +41,7 @@ export default function Navbar() {
                                 </svg>
                             </label>
                         </div>
-                        <div className="drawer-side fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm">
+                        <div className="drawer-side fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm">
                             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                             <div className="menu bg-dark-bg min-h-full w-80 p-4 overflow-y-auto">
                                 <ul className="mt-4">
