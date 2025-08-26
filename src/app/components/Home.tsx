@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Hero() {
     return (
-        <section className="h-screen flex flex-col md:flex-row items-center justify-center md:justify-around gap-6 overflow-hidden px-3"
+        <section className="h-screen flex flex-col md:flex-row items-center justify-start md:justify-around gap-6 overflow-hidden px-3"
             id="#">
             {/* Background Image */}
             <Image
